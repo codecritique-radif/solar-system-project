@@ -1,0 +1,187 @@
+ul#descriptions {
+
+    position: absolute;
+
+    top: 150px;
+
+    right: 100px;
+
+    list-style: none;
+
+}
+
+ul#descriptions h2 {
+
+    cursor: pointer;
+
+    color: #386077;
+
+    -webkit-transition: all 0.15s ease-in;
+
+    -moz-transition: all 0.15s ease-in;
+
+    -o-transition: all 0.15s ease-in;
+
+    transition: all 0.15s ease-in;
+
+    font-size: 20px;
+
+    position: relative;
+
+    z-index: 101;
+
+    -webkit-transform: scale(1);
+
+    -moz-transform: scale(1);
+
+    -o-transform: scale(1);
+
+transform: scale(1);
+
+    margin-bottom: -15px;
+
+}
+
+
+ul#descriptions h2:hover {
+
+   color: #aa4200; 
+
+    -webkit-transform: scale(1.08);
+
+    -moz-transform: scale(1.08);
+
+    -o-transform: scale(1.08);
+
+    transform: scale(1.08);
+
+}
+
+ul#descriptions li p {
+    position: absolute;
+
+    left: -250px;
+
+    top: 0;
+
+    width: 200px;
+
+    display: inline;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    font-size: 13px;
+
+    -webkit-border-radius: 5px;
+
+    -moz-border-radius: 5px;
+
+    border-radius: 5px;
+
+    -webkit-transition: all 0.3s ease-in;
+
+    -moz-transition: all 0.3s ease-in;
+
+    -o-transition: all 0.3s ease-in;
+
+    transition: all 0.3s ease-in;
+
+    background: #0f132c;
+
+    padding: 30px;
+
+    color: #767892;
+
+    line-height: 1.7;
+
+    z-index: 100;
+
+    border: 1px solid #1c203c;
+
+}
+
+ul#descriptions h2:hover+p {
+
+    visibility: visible;
+
+    opacity: 0.9;
+
+    left: -280px;
+
+}
+
+​
+
+/* CSS3 Animations */
+
+ul.solarsystem li {
+
+    -webkit-animation-iteration-count:infinite;
+    
+    -webkit-animation-timing-function:linear;
+
+    -webkit-animation-name:orbit;
+
+    
+
+    -moz-animation-iteration-count:infinite;
+
+    -moz-animation-timing-function:linear;
+
+    -moz-animation-name:orbit;
+
+}
+
+ul.solarsystem li.earth span {
+
+    -webkit-animation-iteration-count:infinite;
+
+    -webkit-animation-timing-function:linear;
+
+    -webkit-animation-name:moon;
+
+    -moz-animation-iteration-count:infinite;
+
+    -moz-animation-timing-function:linear;
+
+    -moz-animation-name:moon;
+
+}
+ul.solarsystem li.mercury {-webkit-animation-duration:5s; -moz-animation-duration:5s;}
+
+ul.solarsystem li.venus {-webkit-animation-duration:8s; -moz-animation-duration:8s;}
+
+ul.solarsystem li.earth {-webkit-animation-duration:12s; -moz-animation-duration:12s;}
+
+ul.solarsystem li.earth span {-webkit-animation-duration:2s; -moz-animation-duration:2s;}
+
+ul.solarsystem li.mars {-webkit-animation-duration:20s; -moz-animation-duration:20s;}
+
+ul.solarsystem li.asteroids_meteorids {-webkit-animation-duration:50s; -moz-animation-duration:50s;}
+
+ul.solarsystem li.jupiter {-webkit-animation-duration:30s; -moz-animation-duration:30s;}
+
+ul.solarsystem li.saturn {-webkit-animation-duration:60s; -moz-animation-duration:60s;}
+
+ul.solarsystem li.uranus {-webkit-animation-duration:70s; -moz-animation-duration:70s;}
+
+ul.solarsystem li.neptune {-webkit-animation-duration:100s; -moz-animation-duration:100s;}
+
+ul.solarsystem li.pluto {-webkit-animation-duration:120s; -moz-animation-duration:120s;}
+
+​
+@-webkit-keyframes orbit { from { -webkit-transform:rotate(0deg) } to { -webkit-transform:rotate(360deg) } }
+
+@-webkit-keyframes moon { from { -webkit-transform:rotate(0deg) } to { -webkit-transform:rotate(360deg) } }
+
+​
+
+@-moz-keyframes orbit { from { -moz-transform:rotate(0deg) } to { -moz-transform:rotate(360deg) } }
+
+@-moz-keyframes moon { from { -moz-transform:rotate(0deg) } to { -moz-transform:rotate(360deg) } }
+
+​
+
+/*ul.solarsystem:hover li {-webkit-animation-play-state: paused;} */
